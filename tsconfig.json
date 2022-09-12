@@ -21,6 +21,15 @@
         "skipLibCheck": true,
         "incremental": true
     },
-    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "components/Cards/CreatorCard/CreatorImageCard.jsx"],
+    "include": [
+        "next-env.d.ts",
+        "**/*.ts",
+        "**/*.tsx",
+        "components/Cards/CreatorCard/CreatorImageCard.jsx",
+        "components/Auth/authForm.jsx",
+        "components/Auth/Logo.jsx",
+        "components/Auth/OAuthButtonGroup.jsx",
+        "components/Auth/PasswordField.jsx"
+    ],
     "exclude": ["node_modules"]
 }

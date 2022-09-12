@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 export const publicationCardWidth = 300;
 const blockedContentMessage = 'You must be logged in to view this content';
 
-export default function PublicationCard({ creatorName, imageSrc, description, routeIdentifier, isDisabled }) {
+export default function PublicationCard({ publicationName, imageSrc, description, routeIdentifier, isDisabled }) {
     const router = useRouter();
     const toast = useToast();
 
@@ -39,7 +39,7 @@ export default function PublicationCard({ creatorName, imageSrc, description, ro
                     rounded={'lg'}
                     pos={'relative'}
                     zIndex={1}
-                    maxW={creatorCardWidth + 'px'}
+                    maxW={publicationCardWidth + 'px'}
                     h={'20em'}
                     direction={'column'}
                     alignItems={'center'}
@@ -75,13 +75,13 @@ export default function PublicationCard({ creatorName, imageSrc, description, ro
                             height={'65vm'}
                             objectFit={'cover'}
                             src={imageSrc}
-                            alt={'creator logo'}
+                            alt={'publicationName logo'}
                             boxShadow="md"
                             backgroundColor={'white'}
                         />
                     </Box>
                     <Text pt={10} color={useColorModeValue('gray.500', 'gray.300')} fontSize={'m'} textTransform={'uppercase'}>
-                        {creatorName}
+                        {publicationName}
                     </Text>
                     <Stack pt={2} align={'center'} noOfLines={2} textAlign={'center'}>
                         <Text as="h3">{description}</Text>

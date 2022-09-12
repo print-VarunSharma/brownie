@@ -5,7 +5,7 @@ import { useRouter } from 'next/router';
 import ProtectedRoute from '../context/ProtectedRoute';
 import { ChakraProvider } from '@chakra-ui/react';
 
-const noAuthRequired = ['/', '/login', '/signup', '/sanity-check'];
+const noAuthRequired = ['/', '/login', '/signup', '/sanity-check', '/landing'];
 
 function MyApp({ Component, pageProps }: AppProps) {
     const router = useRouter();

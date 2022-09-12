@@ -85,13 +85,12 @@ export default function NavBar() {
                         fontWeight={600}
                         color={'white'}
                         bg={'pink.400'}
-                        href={'#'}
                         _hover={{
                             bg: 'pink.300'
                         }}
                         onClick={() => {
                             logout();
-                            router.push('/login');
+                            router.push('/logout');
                         }}
                     >
                         Log out
